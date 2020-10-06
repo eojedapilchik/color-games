@@ -22,3 +22,11 @@ h1 {
   padding-bottom: 70%;
   border-radius: 10px;
 }
+
+.hide {
+  background-color: #232323;
+}
+
+span {
+  color: white;
+}
