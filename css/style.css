@@ -1,0 +1,24 @@
+:root {
+  --max-width: 600px;
+}
+
+body {
+  background-color: #232323;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+.container {
+  max-width: var(--max-width);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+  margin: 0 auto;
+}
+.square {
+  background-color: purple;
+  padding-bottom: 70%;
+  border-radius: 10px;
+}
