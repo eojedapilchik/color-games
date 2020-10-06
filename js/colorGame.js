@@ -9,7 +9,7 @@ let colors = [
 ];
 
 let squares = document.querySelectorAll(".square");
-let pickedColor = colors[3];
+let pickedColor = pickColor();
 let colorDisplay = document.getElementById("colorDisplay");
 let messageDisplay = document.getElementById("message");
 
@@ -27,6 +27,7 @@ for (let i = 0; i < squares.length; i++) {
       changeColors(clickedColor);
     } else {
       this.style.backgroundColor = "#232323";
+      this.classList.add("hide");
       messageDisplay.textContent = "Try Again";
     }
   });
@@ -36,4 +37,9 @@ function changeColors(color) {
   for (let i = 0; i < colors.length; i++) {
     squares[i].style.backgroundColor = color;
   }
+}
+
+function pickColor() {
+  let rnd = Math.floor(Math.random() * colors.length);
+  return colors[rnd];
 }
