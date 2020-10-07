@@ -19,6 +19,9 @@ h1 {
   color: black;
 }
 
+.selected {
+  background-color: blue;
+}
 .container {
   max-width: var(--max-width);
   display: grid;
