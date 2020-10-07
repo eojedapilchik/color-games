@@ -2,14 +2,58 @@
   --max-width: 600px;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #232323;
+  font-family: "Montserrat", "Avenir", sans-serif;
 }
 
 h1 {
   color: #fff;
   text-align: center;
+  background-color: steelblue;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1.15;
+  padding: 20px 0;
 }
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 700;
+  color: steelblue;
+  letter-spacing: 1px;
+  font-size: inherit;
+  padding: 0 5px;
+  transition: all 0.4s;
+  --webkit-transition: all 0.4s; /*For browser support*/
+  --moz-transition: all 0.4s; /*For browser support - mozilla*/
+}
+
+button:hover {
+  color: white;
+  background-color: steelblue;
+}
+
+#colorDisplay {
+  font-size: 200%;
+}
+
+#message {
+  display: inline-block;
+  width: 20%;
+}
+
 #stripe {
   background-color: white;
   height: 30px;
@@ -20,19 +64,24 @@ h1 {
 }
 
 .selected {
-  background-color: blue;
+  color: white;
+  background-color: steelblue;
 }
+
 .container {
   max-width: var(--max-width);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.7rem;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 .square {
   /* background-color: purple; */
   padding-bottom: 70%;
   border-radius: 10px;
+  transition: background 0.8s;
+  --webkit-transition: background 0.8s; /*For browser support*/
+  --moz-transition: background 0.8s; /*For browser support - mozilla*/
 }
 
 .hide {
