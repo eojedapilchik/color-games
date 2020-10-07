@@ -14,6 +14,16 @@ let squares = document.querySelectorAll(".square");
 let pickedColor = pickColor();
 let colorDisplay = document.getElementById("colorDisplay");
 let messageDisplay = document.getElementById("message");
+let resetButton = document.querySelector("#reset");
+
+resetButton.addEventListener("click", function () {
+  colors = generateRandomColors(6);
+  pickedColor = pickColor();
+  colorDisplay.textContent = pickedColor;
+  for (let i = 0; i < squares.length; i++) {
+    squares[i].style.backgroundColor = colors[i];
+  }
+});
 
 colorDisplay.textContent = pickedColor;
 

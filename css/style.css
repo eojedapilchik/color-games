@@ -10,12 +10,21 @@ h1 {
   color: #fff;
   text-align: center;
 }
+#stripe {
+  background-color: white;
+  height: 30px;
+  /* display: flex; */
+  text-align: center;
+  /* justify-content: center; */
+  color: black;
+}
+
 .container {
   max-width: var(--max-width);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.7rem;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 .square {
   /* background-color: purple; */
@@ -26,8 +35,4 @@ h1 {
 .hide {
   background-color: #232323;
   /* visibility: hidden; */
-}
-
-span {
-  color: white;
 }
