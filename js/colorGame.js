@@ -39,6 +39,7 @@ function changeColors(color) {
   for (let i = 0; i < colors.length; i++) {
     squares[i].style.backgroundColor = color;
   }
+  document.querySelector("h1").style.backgroundColor = color;
 }
 
 function pickColor() {
